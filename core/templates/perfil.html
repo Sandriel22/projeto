@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+</head>
+<body>
+    
+    {% block conteudo %}
+    <p>Olá {{ user.username }}</p>
+    <p><a href="{% url 'logout' %}">Sair</a></p>
+    {% endblock %}
+</body>
+</html>
